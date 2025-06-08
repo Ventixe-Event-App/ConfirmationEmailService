@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
-
+ 
 // 1. Configuration
 builder.Services.Configure<EmailSettings>(
     builder.Configuration.GetSection("EmailSettings"));
